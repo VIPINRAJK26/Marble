@@ -33,7 +33,11 @@ const Navbar = () => {
         LOGO
       </div>
 
-      <div className={`hidden md:flex space-x-8  text-lg font-semibold md:pr-32 ${isScrolled ? "text-black" : "text-white"}`}>
+      <div
+        className={`hidden md:flex space-x-8   text-lg font-semibold md:pr-32 ${
+          isScrolled ? "text-black" : "text-white"
+        }`}
+      >
         {[
           "Home",
           "About Us",
@@ -42,7 +46,11 @@ const Navbar = () => {
           "Showrooms",
           "Contact Us",
         ].map((item) => (
-          <a href="#" key={item} className="hover:opacity-75">
+          <a
+            href="#"
+            key={item}
+            className="hover:opacity-75 hover:text-yellow-300 hover:scale-105 hover:underline"
+          >
             {item}
           </a>
         ))}

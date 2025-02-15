@@ -1,9 +1,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import StatsSection from "./StatsSection";
 
 const Ourstory = () => {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, -200]); 
+  const y = useTransform(scrollY, [0, 500], [0, -200]);
 
   return (
     <div
@@ -13,12 +12,18 @@ const Ourstory = () => {
           "url('https://img.freepik.com/free-vector/realistic-white-golden-geometric-background_79603-2032.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_authors_boost')",
       }}
     >
-      <div className="md:absolute px-5 md:px-0 inset-0 flex items-center justify-center text-black ">
+      <div className="md:absolute px-4 md:px-0 inset-0 flex items-center justify-center text-black ">
         <div className="grid md:grid-cols-2 grid-cols-1">
-          <div className="md:w-[60%] m-auto content-center ">
+          <div
+            className="md:w-[60%] m-auto content-center "
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
             <p className="font-semibold text-xl text-gray-500">OUR STORY</p>
-            <h1 className="font-bold text-white my-2 text-3xl p-2 bg-gray-400">28 Years of Building Legacy in Excellent Home Solutions</h1>
-            <p className="font-medium text-md text-gray-900">
+            <h1 className="font-bold text-white my-2 text-3xl p-2 bg-gray-400">
+              28 Years of Building Legacy in Excellent Home Solutions
+            </h1>
+            <p className="font-medium text-md text-gray-900 md:px-0 px-5">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
               iste voluptatibus quos expedita deserunt illo modi exercitationem
               similique laudantium ex esse soluta eaque, nobis reiciendis
@@ -50,13 +55,9 @@ const Ourstory = () => {
             </div>
           </div>
         </div>
-        <div className="absolute hidden md:top-[85%] w-full ">
-            <StatsSection/>
-        </div>
       </div>
     </div>
   );
 };
-
 
 export default Ourstory;
