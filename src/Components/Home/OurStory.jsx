@@ -7,6 +7,7 @@ const Ourstory = () => {
   return (
     <div
       className="relative h-screen bg-fixed bg-center bg-cover"
+      id="about"
       style={{
         backgroundImage:
           "url('https://img.freepik.com/free-vector/realistic-white-golden-geometric-background_79603-2032.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_authors_boost')",
@@ -16,7 +17,7 @@ const Ourstory = () => {
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div
             className="md:w-[60%] m-auto content-center "
-            data-aos="fade-up"
+            data-aos="zoom-in"
             data-aos-duration="1100"
           >
             <p className="font-semibold text-xl text-gray-500">OUR STORY</p>

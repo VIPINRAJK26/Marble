@@ -7,6 +7,7 @@ import WhatsAppIcon from "./Common/WhatsApp";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 import { useEffect } from "react";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
       <WhatsAppIcon/>
