@@ -16,10 +16,10 @@ const ContactUs = () => {
   };
 
   return (
-    <div className=" bg-no-repeat w-full h-screen bg-cover bg-[url('https://img.freepik.com/free-photo/top-view-chat-bubbles-with-telephone-receiver-copy-space_23-2148796078.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid')] p-10 md:pt-28  ">
+    <div className="bg-no-repeat w-full bg-contain min-h-[600px] bg-[url('https://img.freepik.com/premium-photo/vintage-blue-telephone_618468-1122.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid')] p-10 md:pt-28">
       <form
         onSubmit={handleSubmit}
-        className="max-w-md mt-20 relative md:left-22 shadow-md hover:shadow-lg hover:scale-105 duration-300 p-3 md:p-7 rounded-xl "
+        className="max-w-md mt-22 relative md:left-22 shadow-md hover:shadow-lg hover:scale-105 duration-300 p-3 md:p-7 rounded-xl "
       >
         <div className="pb-10">
           <h1 className="text-4xl pb-5 font-semibold text-white">Contact Us</h1>

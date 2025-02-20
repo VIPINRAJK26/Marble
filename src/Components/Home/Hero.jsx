@@ -57,28 +57,30 @@ const Hero = () => {
         className="absolute top-1/2 left-[10%] text-white"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }} // Slow parallax for text
       >
-        <h2 className="text-3xl font-bold">Exquisite Collection of</h2>
-        <h1 className="text-5xl font-bold">Bathroom Interiors and Fittings</h1>
+        <h2 className="text-3xl font-bold">Elevate Your Home’s Aesthetic </h2>
+        <h1 className="text-5xl font-bold">
+          with Our Stunning Stone Selection!
+        </h1>
       </div>
       <div
-        className="absolute hidden md:flex bottom-[10%] left-[10%] grid md:grid-cols-4 gap-10 text-white"
+        className="absolute hidden md:flex bottom-[10%] left-[10%] gap-10 text-white"
         style={{ transform: `translateY(${offsetY * 0.15}px)` }} // Slight parallax for content
       >
         <div>
-          <p>Most Trusted</p>
-          <p>Premium Marble</p>
+          <p>Transform Your Space </p>
+          <p>with Timeless Elegance</p>
         </div>
         <div>
-          <p>Floors Chosen</p>
-          <p>By Your Heart's Desire</p>
+          <p>Durable, Beautiful, Unmatched- </p>
+          <p>The Perfect Stone for Every Surface!</p>
         </div>
         <div>
-          <p>Exquisite Collection of</p>
-          <p>Bathroom Interiors and fittings</p>
+          <p>From Classic to Contemporary,</p>
+          <p>Find the Perfect Stone for Your Home!</p>
         </div>
         <div>
-          <p>A Pioneer Supplier of</p>
-          <p>Flooring, Roofing and Sanitary Solutions</p>
+          <p>Timeless Beauty, Modern Appeal</p>
+          <p>Discover Our Stone Collection!</p>
         </div>
       </div>
       <div className="absolute hidden md:flex -right-14 bottom-[40%] rotate-90  gap-10 text-white">
