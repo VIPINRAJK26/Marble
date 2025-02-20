@@ -1,8 +1,20 @@
+import { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Hero = () => {
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.scrollY * 0.5); // Adjust speed of parallax effect
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -25,7 +37,14 @@ const Hero = () => {
     <div className="relative w-full h-screen overflow-hidden">
       <Slider {...settings}>
         {slides.map((src, index) => (
-          <div key={index} className="w-full h-screen">
+          <div
+            key={index}
+            className="w-full h-screen"
+            style={{
+              transform: `translateY(${offsetY * 0.2}px)`, // Parallax effect
+              transition: "transform 0.1s ease-out",
+            }}
+          >
             <img
               src={src}
               alt={`Slide ${index + 1}`}
@@ -34,31 +53,35 @@ const Hero = () => {
           </div>
         ))}
       </Slider>
-      <div className="absolute top-1/2 left-[10%]  text-white">
-        <h2 className="text-3xl font-bold ">Exquisite Collection of</h2>
-        <h1 className="text-5xl font-bold ">
-          Bathroom Interiors and Fittings
-        </h1>
+      <div
+        className="absolute top-1/2 left-[10%] text-white"
+        style={{ transform: `translateY(${offsetY * 0.1}px)` }} // Slow parallax for text
+      >
+        <h2 className="text-3xl font-bold">Exquisite Collection of</h2>
+        <h1 className="text-5xl font-bold">Bathroom Interiors and Fittings</h1>
       </div>
-      <div className="absolute hidden md:flex bottom-[10%] left-[10%] grid md:grid-cols-4  gap-10  text-white ">
-        <div className="">
+      <div
+        className="absolute hidden md:flex bottom-[10%] left-[10%] grid md:grid-cols-4 gap-10 text-white"
+        style={{ transform: `translateY(${offsetY * 0.15}px)` }} // Slight parallax for content
+      >
+        <div>
           <p>Most Trusted</p>
           <p>Premium Marble</p>
         </div>
-        <div className="">
-          <p>Floors Choosen</p>
+        <div>
+          <p>Floors Chosen</p>
           <p>By Your Heart's Desire</p>
         </div>
-        <div className="">
-          <p>Exquisite Collection of </p>
+        <div>
+          <p>Exquisite Collection of</p>
           <p>Bathroom Interiors and fittings</p>
         </div>
-        <div className="">
+        <div>
           <p>A Pioneer Supplier of</p>
-          <p>Flooring , Roofing and Sanitary Solutions</p>
+          <p>Flooring, Roofing and Sanitary Solutions</p>
         </div>
       </div>
-      <div className="absolute hidden md:flex -right-14 bottom-[40%]  rotate-90 flex gap-10 text-white ">
+      <div className="absolute hidden md:flex -right-14 bottom-[40%] rotate-90  gap-10 text-white">
         {["Facebook", "Instagram", "YouTube", "LinkedIn"].map((social) => (
           <a href="#" key={social} className="hover:opacity-75">
             {social}

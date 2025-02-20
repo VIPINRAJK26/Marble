@@ -22,21 +22,27 @@ const Ourstory = () => {
           >
             <p className="font-semibold text-xl text-gray-500">OUR STORY</p>
             <h1 className="font-bold text-white my-2 text-3xl p-2 bg-gray-400">
-              28 Years of Building Legacy in Excellent Home Solutions
+              Over 30 years of Experience in Natural Stone Management
             </h1>
-            <p className="font-medium text-md text-gray-900 md:px-0 px-5">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-              iste voluptatibus quos expedita deserunt illo modi exercitationem
-              similique laudantium ex esse soluta eaque, nobis reiciendis
-              aliquam nesciunt vero quasi tempore quisquam sint ea non earum
-              corporis. Reiciendis quia sint tenetur quod ea praesentium eius
-              quos! Earum quae tempora rem facere, doloribus veritatis maiores.
-              Doloremque adipisci necessitatibus eum aliquam. Nobis accusamus
-              illo odit optio tempore pariatur non ab culpa eligendi animi
-              minima ut, est vel neque, assumenda eveniet aliquid quia velit
-              aspernatur dolor. Assumenda fuga explicabo consectetur magnam,
-              nesciunt voluptatibus dolorem illo, inventore, dolor perspiciatis
-              quibusdam voluptates animi repudiandae tempore est.
+            <p className="font-medium text-md text-gray-900 md:px-0 px-5 text-justify">
+              PK Stones is a trusted name in the marble and granite industry,
+              boasting years of expertise as a leading distributor and dealer.
+              Specializing in high-quality natural stones, the company offers an
+              extensive range of premium marble, granite, and other stone
+              products tailored for residential, commercial, and architectural
+              projects. With a commitment to excellence, PK Stones sources
+              materials from renowned quarries worldwide, ensuring durability,
+              elegance, and timeless beauty in every piece.
+            </p>
+            <p className="font-medium text-md text-gray-900 md:px-0 px-5 text-justify">
+              Their skilled team provides advanced solutions, from selection and
+              customization to installation, catering to the unique needs of
+              clients. Known for their reliability, craftsmanship, and
+              customer-centric approach, PK Stones has built a strong reputation
+              for delivering exceptional quality and service. Whether it’s for
+              counter tops, flooring, or decorative accents, PK Stones
+              transforms spaces into stunning masterpieces, making them a
+              preferred choice for designers, builders, and homeowners alike
             </p>
           </div>
           <div className="md:flex justify-center">
