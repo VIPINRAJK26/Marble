@@ -1,22 +1,33 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -60,14 +71,78 @@ const Navbar = () => {
               About Us
             </HashLink>
           </li>
-          <li>
-            <HashLink
-              smooth
-              to="#products"
-              className={scrolling ? "text-gray-800" : "text-white"}
+          {/* Dropdown Menu */}
+          <li className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className={`focus:outline-none ${
+                scrolling ? "text-gray-800" : "text-white"
+              }`}
             >
-              Products & Collections
-            </HashLink>
+              Products & Collections ▼
+            </button>
+            <ul
+              className={`absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg transition-all duration-300 ${
+                dropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
+              }`}
+            >
+              <li>
+                <Link
+                  to="/category/indian-marbles"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Indian Marbles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/indian-granites"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Indian Granites
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/italian-marbles"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Italian Marbles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/kotta-stone"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Kotta Stone
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/jaisalmer-stone"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Jaisalmer Stone
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/lime-stones"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Lime Stones
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/tiles"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Tiles
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <HashLink

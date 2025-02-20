@@ -20,7 +20,10 @@ const Ourstory = () => {
             data-aos="zoom-in"
             data-aos-duration="1100"
           >
-            <p className="font-semibold text-xl text-gray-500">OUR STORY</p>
+            <p className="relative font-semibold text-xl text-gray-500 md:px-0 px-5 after:content-[''] after:block after:w-12 after:h-0.5 after:bg-gray-500 after:absolute after:top-1/2 after:left-30 ">
+              OUR STORY
+            </p>
+
             <h1 className="font-bold text-white my-2 text-3xl p-2 bg-gray-400">
               Over 30 years of Experience in Natural Stone Management
             </h1>

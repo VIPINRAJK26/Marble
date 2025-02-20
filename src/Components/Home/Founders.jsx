@@ -33,7 +33,7 @@ const Founders = () => {
 
   return (
     <div className="bg-gray-50 py-14">
-      <h1 className="text-center font-bold text-gray-800 text-3xl">Founders</h1>
+      <h1 className="text-center font-bold text-gray-700 text-3xl">Founders</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-10 md:px-32 px-5">
         {founders.map((founder, index) => (
           <div
