@@ -68,33 +68,125 @@ const productsData = {
     },
   ],
   "indian-granites": [
-    { id: 7, name: "Black Galaxy", image: "/images/black-galaxy.jpg" },
-    { id: 8, name: "Tan ", image: "/images/tan-brown.jpg" },
-    { id: 9, name: "Tan ", image: "/images/tan-brown.jpg" },
-    { id: 10, name: "Tan ", image: "/images/tan-brown.jpg" },
+    {
+      id: 7,
+      name: "Pure jet Black ",
+      image:
+        "https://img.freepik.com/free-photo/black-marble-texture-background_24972-2298.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 8,
+      name: "Tan Brown  ",
+      image:
+        "https://img.freepik.com/free-photo/black-marble-texture-background_24972-2298.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 9,
+      name: "Steel Grey  ",
+      image:
+        "https://img.freepik.com/free-photo/black-marble-texture-background_24972-2298.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 10,
+      name: "Black Galey   ",
+      image:
+        "https://img.freepik.com/free-photo/black-marble-texture-background_24972-2298.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
   ],
   "italian-marbles": [
-    { id: 11, name: "Carrara White", image: "/images/carrara.jpg" },
+    {
+      id: 11,
+      name: "Types of Italian Marbles ",
+      image:
+        "https://img.freepik.com/free-photo/closeup-marble-textured-background_53876-31896.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
   ],
   "kotta-stone": [
-    { id: 12, name: "Kotta Brown", image: "/images/kotta-brown.jpg" },
-    { id: 13, name: "Kotta Green", image: "/images/kotta-green.jpg" },
-    { id: 14, name: "Kotta Green", image: "/images/kotta-green.jpg" },
-    { id: 15, name: "Kotta Green", image: "/images/kotta-green.jpg" },
+    {
+      id: 12,
+      name: " Yellow",
+      image:
+        "https://img.freepik.com/free-photo/concrete-floor_1127-375.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 13,
+      name: " Green",
+      image:
+        "https://img.freepik.com/free-photo/concrete-floor_1127-375.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 14,
+      name: " Gray",
+      image:
+        "https://img.freepik.com/free-photo/concrete-floor_1127-375.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 15,
+      name: " Brown",
+      image:
+        "https://img.freepik.com/free-photo/concrete-floor_1127-375.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
   ],
   "jaisalmer-stone": [
-    { id: 16, name: "Yellow Jaisalmer", image: "/images/yellow-jaisalmer.jpg" },
-    { id: 17, name: "Yellow Jaisalmer", image: "/images/yellow-jaisalmer.jpg" },
-    { id: 18, name: "Yellow Jaisalmer", image: "/images/yellow-jaisalmer.jpg" },
-    { id: 19, name: "Red Jaisalmer", image: "/images/red-jaisalmer.jpg" },
+    {
+      id: 16,
+      name: "Etta Gold",
+      image:
+        "https://img.freepik.com/free-photo/mineral-wall-rock-hard-strong_1253-846.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 17,
+      name: "Floury Gold",
+      image:
+        "https://img.freepik.com/free-photo/mineral-wall-rock-hard-strong_1253-846.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 18,
+      name: "Teakwood ",
+      image:
+        "https://img.freepik.com/free-photo/mineral-wall-rock-hard-strong_1253-846.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 19,
+      name: "Mulsagar",
+      image:
+        "https://img.freepik.com/free-photo/mineral-wall-rock-hard-strong_1253-846.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
   ],
   "lime-stones": [
-    { id: 20, name: "Blue Limestone", image: "/images/blue-limestone.jpg" },
-    { id: 21, name: "Tandoor Yellow", image: "/images/tandoor-yellow.jpg" },
-    { id: 22, name: "Tandoor Yellow", image: "/images/tandoor-yellow.jpg" },
-    { id: 23, name: "Tandoor Yellow", image: "/images/tandoor-yellow.jpg" },
+    {
+      id: 20,
+      name: "Thandoor stone",
+      image:
+        "https://img.freepik.com/free-photo/black-marbled-surface_53876-90798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 21,
+      name: "Gotan",
+      image:
+        "https://img.freepik.com/free-photo/black-marbled-surface_53876-90798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 22,
+      name: "Jaisalmer",
+      image:
+        "https://img.freepik.com/free-photo/black-marbled-surface_53876-90798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+    {
+      id: 23,
+      name: "Jodhpur",
+      image:
+        "https://img.freepik.com/free-photo/black-marbled-surface_53876-90798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
   ],
-  tiles: [{ id: 35, name: "Glossy Tile", image: "/images/glossy-tile.jpg" }],
+  tiles: [
+    {
+      id: 35,
+      name: "Glossy Tile",
+      image:
+        "https://img.freepik.com/free-photo/black-marbled-surface_53876-90798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    },
+  ],
 };
 
 const Preview = () => {
@@ -125,7 +217,9 @@ const Preview = () => {
         )}
       </div>
       <h1 className="text-center font-bold text-3xl text-gray-500 capitalize ">
-        <span className="bg-stone-200 py-2 px-5 shadow rounded-xl">products in {categoryName}</span>
+        <span className="bg-stone-200 py-2 px-5 shadow rounded-xl">
+          products in {categoryName}
+        </span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-32 py-10">
         {products.length > 0 ? (
