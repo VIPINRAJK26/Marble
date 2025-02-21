@@ -16,7 +16,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-no-repeat w-full bg-contain min-h-[600px] bg-[url('https://img.freepik.com/premium-photo/vintage-blue-telephone_618468-1122.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid')] p-10 md:pt-28">
+    <div className="bg-no-repeat w-full  bg-cover  backdrop-blur-2xl bg-[url('https://img.freepik.com/free-photo/young-asia-girl-wear-medical-face-mask-use-mobile-phone-with-dressed-casual-cloth-self-isolation-social-distancing-quarantine-corona-virus-panoramic-banner-blue-background-with-copy-space_7861-2703.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid')] p-10 md:pt-28">
       <form
         onSubmit={handleSubmit}
         className="max-w-md mt-22 relative md:left-22 shadow-md hover:shadow-lg hover:scale-105 duration-300 p-3 md:p-7 rounded-xl "

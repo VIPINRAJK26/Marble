@@ -38,7 +38,7 @@ const Founders = () => {
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="bg-white rounded-md hover:scale-105 duration-300 w-[95%]"
+            className="bg-white rounded-md hover:scale-105 duration-300 w-[95%] mx-auto"
           >
             <img
               src={founder.img}
