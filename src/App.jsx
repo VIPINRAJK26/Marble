@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ContactUs from "./pages/ContactUs";
 import Preview from "./pages/Preview";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/category/:categoryName" element={<Preview />} />
+        <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
       <Footer />
       <WhatsAppIcon />

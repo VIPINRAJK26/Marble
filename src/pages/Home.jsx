@@ -15,7 +15,7 @@ const Home = () => {
         <Ourstory />
       </div>
       <div className="" id="">
-        {/* <AboutUs /> */}
+        <AboutUs />
       </div>
       <div className="" id="gallery">
         <FeaturedProducts />

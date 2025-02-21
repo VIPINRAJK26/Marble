@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const previewData = {
   "indian-marbles": {
@@ -225,14 +226,16 @@ const Preview = () => {
         {products.length > 0 ? (
           products.map((product) => (
             <div key={product.id} className=" p-3 rounded-lg shadow">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-40 object-cover mb-2 rounded"
-              />
-              <h3 className="text-lg text-gray-600 font-semibold">
-                {product.name}
-              </h3>
+              <Link to={`/product/${product.id}`}>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-40 object-cover mb-2 rounded"
+                />
+                <h3 className="text-lg text-gray-600 font-semibold">
+                  {product.name}
+                </h3>
+              </Link>
             </div>
           ))
         ) : (
