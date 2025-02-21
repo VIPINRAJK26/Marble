@@ -49,7 +49,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl text-gray-800"
+          className="md:hidden text-3xl text-white"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? "✖" : "☰"}
@@ -152,6 +152,11 @@ const Navbar = () => {
             >
               Gallery
             </HashLink>
+          </li>
+          <li>
+            <Link to="" className={scrolling ? "text-gray-800" : "text-white"}>
+              Services
+            </Link>
           </li>
           <li>
             <Link
