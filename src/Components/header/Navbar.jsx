@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl text-white"
+          className={`md:hidden text-3xl  ${ scrolling ? "text-gray-600" : "text-white"}`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? "✖" : "☰"}
@@ -194,7 +194,16 @@ const Navbar = () => {
                 className="text-gray-800 text-lg"
                 onClick={() => setMenuOpen(false)}
               >
-                Products & Services
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                className="text-gray-800 text-lg"
+                onClick={() => setMenuOpen(false)}
+              >
+                Services
               </Link>
             </li>
             <li>

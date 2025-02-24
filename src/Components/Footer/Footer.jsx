@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         {/* Middle Section - Products & Showrooms */}
-        <div className="flex flex-wrap md:flex-nowrap gap-10 md:gap-20">
+        <div className="flex  gap-10 md:gap-20">
           <div>
             <h3 className="text-lg font-semibold">PRODUCTS</h3>
             <ul className="mt-4 space-y-2">
