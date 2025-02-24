@@ -6,21 +6,21 @@ const Services = () => {
           P K Stone Services
         </h1>
       </div>
-      <div className="space-y-5">
+      <div className="md:space-y-5">
         <div className="flex justify-center py-10 ">
           <div className="md:flex rounded-md max-w-6xl gap-10">
             <div>
               <img
                 src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
                 alt=""
-                className="w-full rounded-3xl"
+                className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
             </div>
             <div className="pl-4 content-center">
-              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5">
+              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5 pt-5">
                 Project Survey and Demand assent
               </h1>
-              <p className="max-w-4xl text-center text-gray-500">
+              <p className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0">
                 We offer expert Natural Stone Project Survey and Product
                 Assessment services. Our team evaluates site requirements,
                 recommends the best materials, and ensures quality compliance.
@@ -39,7 +39,7 @@ const Services = () => {
               <h1 className="text-3xl text-gray-600 text-center font-bold pb-5">
                 Product Purchasing and delivery
               </h1>
-              <p className="max-w-4xl text-center text-gray-500">
+              <p className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0">
                 Also, we specialize in Natural Stone Product Purchasing and
                 Delivery, sourcing premium marbles and granites directly from
                 quarries. We ensure high-quality materials, competitive pricing,
@@ -52,7 +52,7 @@ const Services = () => {
               <img
                 src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
                 alt=""
-                className="w-full rounded-3xl"
+                className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
             </div>
           </div>
@@ -64,14 +64,14 @@ const Services = () => {
               <img
                 src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
                 alt=""
-                className="w-full rounded-3xl"
+                className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
             </div>
             <div className="pl-4 content-center">
-              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5">
+              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5 pt-5">
                 Natural stone crafting
               </h1>
-              <p className="max-w-4xl text-center text-gray-500">
+              <p className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0">
                 PK Stone excels in Natural Stone Crafting and Interior Design,
                 creating stunning spaces with premium marbles and granites. Our
                 skilled artisans craft bespoke designs, from elegant flooring to
@@ -89,7 +89,7 @@ const Services = () => {
               <h1 className="text-3xl text-gray-600 text-center font-bold pb-5">
                 Maintenance & Refurnishing
               </h1>
-              <p className="max-w-4xl text-center text-gray-500">
+              <p className="max-w-4xl text-center m-auto text-gray-500 pb-5 md:pb-0">
                 We also providing service of expert Natural Stone Project
                 Maintenance and Refurnishing services for both domestic and
                 commercial projects. We restore the beauty and functionality of
@@ -102,7 +102,7 @@ const Services = () => {
               <img
                 src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
                 alt=""
-                className="w-full rounded-3xl"
+                className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
             </div>
           </div>
