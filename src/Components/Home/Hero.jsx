@@ -62,7 +62,7 @@ const Hero = () => {
           with Our Stunning Stone Selection!
         </h1>
       </div>
-      <div
+      {/* <div
         className="absolute hidden md:flex bottom-[10%] left-[10%] gap-10 text-white"
         style={{ transform: `translateY(${offsetY * 0.15}px)` }} // Slight parallax for content
       >
@@ -82,7 +82,7 @@ const Hero = () => {
           <p>Timeless Beauty, Modern Appeal</p>
           <p>Discover Our Stone Collection!</p>
         </div>
-      </div>
+      </div> */}
       <div className="absolute hidden md:flex -right-14 bottom-[40%] rotate-90  gap-10 text-white">
         {["Facebook", "Instagram", "YouTube", "LinkedIn"].map((social) => (
           <a href="#" key={social} className="hover:opacity-75">

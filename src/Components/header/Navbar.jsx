@@ -149,7 +149,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="/#gallery"
+              to="/gallery"
               className={scrolling ? "text-gray-800" : "text-white"}
             >
               Gallery

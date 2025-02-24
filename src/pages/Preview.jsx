@@ -278,7 +278,7 @@ const Preview = () => {
             <img
               src={preview.image}
               alt={categoryName}
-              className="w-full h-full object-cover mb-2 rounded"
+              className="w-full h-100 object-cover mb-2 rounded"
             />
             <h1
               className="typing-text preview_text text-5xl font-bold text-white relative -top-[170px] -left-100 text-center 
@@ -290,11 +290,11 @@ const Preview = () => {
           </div>
         )}
       </div>
-      <h1 className="text-center font-bold text-3xl text-gray-500 capitalize ">
+      {/* <h1 className="text-center font-bold text-3xl text-gray-500 capitalize ">
         <span className="bg-stone-200 py-2 px-5 shadow rounded-xl">
           products in {categoryName}
         </span>
-      </h1>
+      </h1> */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-32 py-10 bg-transparent">
         {products.length > 0 ? (
           products.map((product, index) => (
@@ -343,6 +343,9 @@ const Preview = () => {
             </Slider>
           </div>
         </Modal>
+      </div>
+      <div className="flex justify-center">
+          <button className="p-3 rounded-4xl shadow-md hover:scale-110 text-stone-50 duration-300 hover:from-blue-500 hover:to-blue-700 bg-gradient-to-r from-blue-600 to-blue-500 mb-10">Contact For More Queries</button>
       </div>
     </div>
   );

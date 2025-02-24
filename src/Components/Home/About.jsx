@@ -7,8 +7,7 @@ const About = () => {
             About Us
           </h1>
         </div>
-        <p className="md:w-[70%] md:text-center text-justify px-5 md:px-0 m-auto font-medium text-lg text-gray-800 pt-10  ">
-          <span className="bg-gray-200 leading-loose p-1 ">
+        <p className="md:max-w-7xl text-justify px-5 md:px-0 m-auto font-medium text-xl text-gray-800 pt-10  ">
             The management team of PK Stone comprises seasoned professionals
             with decades of expertise in the natural stone industry. Led by the
             team brings over 30 years of experience in sourcing, sales, and
@@ -19,7 +18,6 @@ const About = () => {
             and customer-centric approach have positioned PK Stone as a trusted
             name in the natural stone industry, delivering excellence and
             innovation in every project
-          </span>
         </p>
       </div>
       <div className="bg-zinc-300 max-w-7xl mx-auto md:rounded-2xl mt-12 p-0">

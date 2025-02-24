@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -63,17 +64,34 @@ const Footer = () => {
               <br /> 10/416, NH Road – Chumgam
               <br /> Feroke – Kozhikkode
               <br /> Kerala – India PIN: 673631
-              <br /> 7x24 Hrs WhatsApp Chat: +91 9447426004
             </li>
           </ul>
+          <div className="rounded-xl border px-4 py-2 m-3 shadow-md">
+            <div className="flex justify-center gap-5">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/3871/3871021.png"
+                alt=""
+                className="w-8"
+              />
+              <h1 className="content-center">WhatsApp Chat :</h1>
+            </div>
+            <div>
+              <h1 className="text-center">+91 9447426004</h1>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
-          <p>Privacy Policy</p>
-          <p>All rights reserved © P K Stone. Powered by Exmedia</p>
+          <div className="flex gap-5">
+            <Link to={'/terms'}>Privacy Policy</Link>
+            <Link to={'/privacy'}>Terms & Conditions</Link>
+          </div>
+          <div>
+            <p>All rights reserved © P K Stone. Powered by Exmedia</p>
+          </div>
         </div>
       </div>
     </footer>

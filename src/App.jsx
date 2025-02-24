@@ -12,6 +12,9 @@ import Preview from "./pages/Preview";
 import ProductPage from "./pages/ProductPage";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
+import Gallery from "./pages/Gallery";
+import TermsAndConditions from "./pages/Terms";
+import PrivacyPolicy from "./pages/Privacy";
 
 function App() {
   useEffect(() => {
@@ -32,6 +35,9 @@ function App() {
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
       <WhatsAppIcon />

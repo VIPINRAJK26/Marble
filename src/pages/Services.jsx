@@ -29,6 +29,11 @@ const Services = () => {
                 precision, durability, and aesthetic excellence in every
                 assessment.
               </p>
+              <div className="flex justify-center pt-5">
+                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -47,6 +52,11 @@ const Services = () => {
                 customer satisfaction, making us a trusted partner for all
                 natural stone needs.
               </p>
+              <div className="flex justify-center pt-5">
+                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                  Know More
+                </button>
+              </div>
             </div>
             <div>
               <img
@@ -79,6 +89,11 @@ const Services = () => {
                 aesthetics. Transform your interiors with our timeless,
                 high-quality stone solutions tailored to your vision.
               </p>
+              <div className="flex justify-center pt-5">
+                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -97,6 +112,11 @@ const Services = () => {
                 repairs. Our team ensures long-lasting results, preserving the
                 elegance and durability of your natural stone installations.
               </p>
+              <div className="flex justify-center pt-5">
+                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                  Know More
+                </button>
+              </div>
             </div>
             <div>
               <img
