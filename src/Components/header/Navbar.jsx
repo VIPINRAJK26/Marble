@@ -53,10 +53,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10 text-lg relative md:right-20">
           <li>
-            <Link
-              to="/"
-              className={scrolling ? "text-gray-800" : "text-white"}
-            >
+            <Link to="/" className={scrolling ? "text-gray-800" : "text-white"}>
               Home
             </Link>
           </li>
@@ -152,7 +149,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#gallery"
+              to="/#gallery"
               className={scrolling ? "text-gray-800" : "text-white"}
             >
               Gallery
@@ -184,7 +181,7 @@ const Navbar = () => {
             <li>
               <HashLink
                 smooth
-                to="#about"
+                to="/about"
                 className="text-gray-800 text-lg"
                 onClick={() => setMenuOpen(false)}
               >
@@ -199,6 +196,15 @@ const Navbar = () => {
               >
                 Products & Services
               </Link>
+            </li>
+            <li>
+              <HashLink
+                to="/#gallery"
+                className="text-gray-800 text-lg"
+                onClick={() => setMenuOpen(false)}
+              >
+                Gallery
+              </HashLink>
             </li>
             <li>
               <Link

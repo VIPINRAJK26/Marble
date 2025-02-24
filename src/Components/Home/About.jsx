@@ -1,12 +1,14 @@
 const About = () => {
   return (
     <div className="">
-      <div className=" bg-no-repeat h-[50vh] bg-cover bg-gradient-to-b from-stone-400 to-gray-200">
-        <div className="relative content-center top-1/3 ">
-          <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r pb-5 from-gray-900 to-gray-500">
+      <div className="  ">
+        <div className="bg-gray-600 h-80">
+          <h1 className="text-center relative top-1/2 font-bold text-6xl text-stone-50">
             About Us
           </h1>
-          <p className="w-[70%] text-center m-auto font-medium text-md text-gray-700 ">
+        </div>
+        <p className="md:w-[70%] md:text-center text-justify px-5 md:px-0 m-auto font-medium text-lg text-gray-800 pt-10  ">
+          <span className="bg-gray-200 leading-loose p-1 ">
             The management team of PK Stone comprises seasoned professionals
             with decades of expertise in the natural stone industry. Led by the
             team brings over 30 years of experience in sourcing, sales, and
@@ -17,10 +19,10 @@ const About = () => {
             and customer-centric approach have positioned PK Stone as a trusted
             name in the natural stone industry, delivering excellence and
             innovation in every project
-          </p>
-        </div>
+          </span>
+        </p>
       </div>
-      <div className="bg-zinc-300 max-w-7xl mx-auto rounded-2xl mt-16 p-0">
+      <div className="bg-zinc-300 max-w-7xl mx-auto md:rounded-2xl mt-12 p-0">
         <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 md:pl-20">
           <div className="content-center">
             <h1 className="text-4xl font-bold text-gray-700 pb-6">
@@ -45,7 +47,7 @@ const About = () => {
             <img
               src="https://img.freepik.com/free-vector/premium-quality-product-golden-label-design_1017-12393.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
               alt=""
-              className="md:w-[70%] rounded-4xl pt-8 md:pt-0"
+              className="md:w-[70%] md:rounded-4xl rounded-xl pt-8 md:pt-0"
             />
           </div>
         </div>
