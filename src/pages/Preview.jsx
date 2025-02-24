@@ -1,33 +1,81 @@
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import Modal from "react-modal";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
+import PreviewData from "../Components/Preview/PreviewData";
 
-const previewData = {
-  "indian-marbles": {
-    image:
-      "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    name: "INDIAN MARBLES",
-  },
-  "indian-granites": {
-    image:
-      "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    name: "INDIAN GRANITES",
-  },
-  "italian-marbles": {
-    image:
-      "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    name: "ITALIAN MARBLES",
-  },
-  "kotta-stone": {
-    image:
-      "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    name: "KOTTA STONE",
-  },
-  "jaisalmer-stone": {
-    image:
-      "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    name: "JAISALMER STONE",
-  },
+
+const images = {
+  "Makrana Marble": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Morchana Marble": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Nizarna Marble": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Talai Udaipur": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Indian Pink Marble": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  Green: [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Pure jet Black": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Tan Brown": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Steel Grey ": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Black Galey": [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+  ],
+  "Yellow" : [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+  ],
+  "kotta Green" : [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+  ],
+  "Gray " : [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+  ],
+  "Brown " : [
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+  ]
 };
+
 
 const productsData = {
   "indian-marbles": [
@@ -51,7 +99,7 @@ const productsData = {
     },
     {
       id: 4,
-      name: "Talai Udaipur ",
+      name: "Talai Udaipur",
       image:
         "https://img.freepik.com/free-photo/marble-patterned-texture-background-marbles-thailand-abstract-natural-marble-black-white-gray-design_1253-1077.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
     },
@@ -111,7 +159,7 @@ const productsData = {
     },
     {
       id: 13,
-      name: " Green",
+      name: "kotta Green",
       image:
         "https://img.freepik.com/free-photo/concrete-floor_1127-375.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
     },
@@ -190,15 +238,40 @@ const productsData = {
   ],
 };
 
-const Preview = () => {
-  const { categoryName } = useParams();
-  const products = productsData[categoryName] || [];
-  const preview = previewData[categoryName] || {};
+Modal.setAppElement("#root");
 
+const Preview = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const { categoryName } = useParams();
+  const preview = PreviewData[categoryName] || {};
+  const products = productsData[categoryName] || [];
   console.log(preview);
+  console.log(products);
+
+  const openModal = (index) => {
+    setSelectedImageIndex(index);
+    setModalIsOpen(true);
+  };
+
+  // Close modal
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  // Slider settings
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: selectedImageIndex,
+  };
 
   return (
-    <div className="container mx-auto   bg-zinc-100 ">
+    <div className="container mx-auto bg-zinc-100 ">
       <div>
         {preview.image && (
           <div>
@@ -222,25 +295,54 @@ const Preview = () => {
           products in {categoryName}
         </span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-32 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-32 py-10 bg-transparent">
         {products.length > 0 ? (
-          products.map((product) => (
-            <div key={product.id} className=" p-3 rounded-lg shadow">
-              <Link to={`/product/${product.id}`}>
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-40 object-cover mb-2 rounded"
-                />
-                <h3 className="text-lg text-gray-600 font-semibold">
-                  {product.name}
-                </h3>
-              </Link>
+          products.map((product, index) => (
+            <div key={product.id} className="p-3 rounded-lg shadow">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-40 object-cover mb-2 rounded cursor-pointer"
+                onClick={() => openModal(index)} // Open modal on click
+              />
+              <h3 className="text-lg text-gray-600 font-semibold">
+                {product.name}
+              </h3>
             </div>
           ))
         ) : (
           <p>No products found for this category.</p>
         )}
+
+        {/* Modal for Image Slider */}
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          className="relative top-20 md:left-1/4 bg-white bg-opacity-10"
+          overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+        >
+          <div className="bg-white  max-w-2xl md:h-[500px] w-full relative">
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
+            >
+              ✖
+            </button>
+
+            <Slider {...sliderSettings}>
+              {products.map((product) => (
+                <div key={product.id} className="flex justify-center">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
+                  {/* <h3 className="text-center font-bold mt-2">{product.name}</h3> */}
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </Modal>
       </div>
     </div>
   );

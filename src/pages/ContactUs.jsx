@@ -19,7 +19,7 @@ const ContactUs = () => {
     <div className="bg-no-repeat w-full  bg-cover  backdrop-blur-2xl bg-[url('https://img.freepik.com/free-photo/young-asia-girl-wear-medical-face-mask-use-mobile-phone-with-dressed-casual-cloth-self-isolation-social-distancing-quarantine-corona-virus-panoramic-banner-blue-background-with-copy-space_7861-2703.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid')] p-10 md:pt-28">
       <form
         onSubmit={handleSubmit}
-        className="max-w-md mt-22 relative md:left-22 shadow-md hover:shadow-lg hover:scale-105 duration-300 p-3 md:p-7 rounded-xl "
+        className="max-w-md  relative md:left-22 shadow-md hover:shadow-lg hover:scale-105 duration-300 p-3 md:p-7 rounded-xl "
       >
         <div className="pb-10">
           <h1 className="text-4xl pb-5 font-semibold text-white">Contact Us</h1>
@@ -37,6 +37,32 @@ const ContactUs = () => {
               onChange={handleChange}
               className="w-full p-2 border rounded text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
               placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block  text-white font-bold mb-2">Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full p-2 border rounded text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
+              placeholder="Enter your Name"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block  text-white font-bold mb-2">Phone:</label>
+            <input
+              type="number"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full p-2 border rounded text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
+              placeholder="Enter your Number"
               required
             />
           </div>

@@ -38,13 +38,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between md:px-32 px-6 py-4">
-        <Link
-          to="/"
-          className={`font-bold text-3xl ${
-            scrolling ? "text-gray-800" : "text-white"
-          }`}
-        >
-          Logo
+        <Link to="/">
+          <img src="/LOGO FOR WEB-02 PNG.png" alt="" className="w-40" />
         </Link>
 
         {/* Mobile Menu Button */}
@@ -58,18 +53,20 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10 text-lg relative md:right-20">
           <li>
-            <Link to="/" className={scrolling ? "text-gray-800" : "text-white"}>
+            <Link
+              to="/"
+              className={scrolling ? "text-gray-800" : "text-white"}
+            >
               Home
             </Link>
           </li>
           <li>
-            <HashLink
-              smooth
-              to="#about"
+            <Link
+              to="/about"
               className={scrolling ? "text-gray-800" : "text-white"}
             >
               About Us
-            </HashLink>
+            </Link>
           </li>
           {/* Dropdown Menu */}
           <li className="relative" ref={dropdownRef}>
@@ -79,10 +76,10 @@ const Navbar = () => {
                 scrolling ? "text-gray-800" : "text-white"
               }`}
             >
-              Products & Collections ▼
+              Products & Services ▼
             </button>
             <ul
-              className={`absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg transition-all duration-300 ${
+              className={`absolute left-0 mt-2 w-48 bg-white shadow-md rounded-xl transition-all duration-300 ${
                 dropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
               }`}
             >
@@ -142,6 +139,14 @@ const Navbar = () => {
                   Tiles
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="block px-4 py-2 text-gray-800 bg-gray-300 hover:bg-gray-400  hover:text-white"
+                >
+                  Services
+                </Link>
+              </li>
             </ul>
           </li>
           <li>
@@ -153,11 +158,7 @@ const Navbar = () => {
               Gallery
             </HashLink>
           </li>
-          <li>
-            <Link to="" className={scrolling ? "text-gray-800" : "text-white"}>
-              Services
-            </Link>
-          </li>
+
           <li>
             <Link
               to="/contact"
@@ -196,7 +197,7 @@ const Navbar = () => {
                 className="text-gray-800 text-lg"
                 onClick={() => setMenuOpen(false)}
               >
-                Products & Collections
+                Products & Services
               </Link>
             </li>
             <li>

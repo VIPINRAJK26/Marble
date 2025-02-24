@@ -10,6 +10,8 @@ import { useEffect } from "react";
 import ContactUs from "./pages/ContactUs";
 import Preview from "./pages/Preview";
 import ProductPage from "./pages/ProductPage";
+import Services from "./pages/Services";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   useEffect(() => {
@@ -28,6 +30,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/category/:categoryName" element={<Preview />} />
         <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
       <Footer />
       <WhatsAppIcon />

@@ -42,7 +42,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold">SHOWROOMS</h3>
             <ul className="mt-4 space-y-2">
-              {["Chungam , calicut"].map((item, index) => (
+              {["Chumgam , calicut"].map((item, index) => (
                 <li key={index} className="hover:text-gray-400 cursor-pointer">
                   {item}
                 </li>
@@ -55,12 +55,15 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h3 className="text-lg font-semibold">CONTACT US</h3>
           <ul className="mt-4 space-y-2">
-            <li>📞 +91 98952 25599</li>
-            <li>✉ hello@pkstone.com</li>
+            <li>📞 +91 9447426004</li>
+            <li>✉ pkstonecalicut@gmail.com</li>
+            <li>✉ infopkstone@gmail.com</li>
             <li>
-              📍 Head Office (Tiles & Sanitary Division)
-              <br /> OPP, Civil Station, Calicut 20
-              <br /> Tel: 0495-2373510, 2373512, 2376858
+              📍 P K Stone
+              <br /> 10/416, NH Road – Chumgam
+              <br /> Feroke – Kozhikkode
+              <br /> Kerala – India PIN: 673631
+              <br /> 7x24 Hrs WhatsApp Chat: +91 9447426004
             </li>
           </ul>
         </div>
