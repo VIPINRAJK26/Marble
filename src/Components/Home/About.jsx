@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="">
-      <div className="  ">
+      <div className="">
         <div className="bg-gray-600 h-80">
           <h1 className="text-center relative top-1/2 font-bold text-7xl opacity-90 text-stone-50">
             About Us
@@ -45,7 +45,7 @@ const About = () => {
             <img
               src="https://img.freepik.com/free-vector/premium-quality-product-golden-label-design_1017-12393.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
               alt=""
-              className="md:w-[70%] md:rounded-4xl rounded-xl pt-8 md:pt-0"
+              className="md:w-[70%] md:rounded-4xl rounded-lg mt-5 md:pt-0"
             />
           </div>
         </div>

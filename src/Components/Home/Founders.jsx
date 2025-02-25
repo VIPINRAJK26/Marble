@@ -9,7 +9,7 @@ const Founders = () => {
 
   return (
     <div className=" py-14">
-      <h1 className="text-center font-bold text-gray-600 text-4xl ">
+      <h1 className="text-center font-bold text-gray-600 text-4xl pb-10 md:pb-0 underline underline-offset-5 md:no-underline ">
         Our Management
       </h1>
       <div className="md:flex max-w-6xl mx-auto pb-10  ">
@@ -51,14 +51,14 @@ const Founders = () => {
             alt=""
             className="w-[50%] mx-auto"
           />
-          <div className=" shadow-lg pt-6 pb-10 rounded-2xl">
-            <h1 className="font-bold text-4xl text-gray-500 text-center pt-5">
+          <div className=" shadow-lg pt-6 pb-5 md:pb-10 rounded-2xl mx-4">
+            <h1 className="font-bold text-3xl text-gray-500 text-center pt-5">
               Mr.Sanjeev Kumar ( Saji){" "}
             </h1>
             <h2 className="font-semibold text-xl text-zinc-500 pb-3 text-center">
               Director
             </h2>
-            <p className="text-lg text-zinc-500 text-justify w-[80%] mx-auto">
+            <p className="text-lg text-zinc-500 text-justify md:w-[80%] mx-auto px-3">
               Mr. Sanjeev Kurar, popularly known as Saji, is the Director of PK
               Stone, boasting an impressive 30-year career in the natural stone
               industry. Based in Rajasthan, India—a hub for high-quality marble
@@ -84,14 +84,14 @@ const Founders = () => {
             alt=""
             className="w-[50%]  mx-auto"
           />
-          <div className=" shadow-lg pt-6 pb-10 rounded-2xl">
-            <h1 className="font-bold text-4xl text-gray-500 text-center pt-5">
+          <div className=" shadow-lg pt-6 pb-5 md:pb-10 rounded-2xl mx-4 ">
+            <h1 className="font-bold text-3xl text-gray-500 text-center pt-5">
               Mr.Devi Das ( Boby)
             </h1>
             <h2 className="font-semibold text-xl text-zinc-500 pb-3 text-center">
               Director
             </h2>
-            <p className="text-lg text-zinc-500 text-justify w-[80%] mx-auto">
+            <p className="text-lg text-zinc-500 text-justify md:w-[80%] mx-auto px-3 ">
               Mr. Devi Das, fondly known as Boby, is keeping the position of
               Director of PK Stone with over three decades of experience since
               1992. Specializing in the sales and purchasing of marbles and

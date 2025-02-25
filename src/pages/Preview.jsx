@@ -281,8 +281,8 @@ const Preview = () => {
               className="w-full h-100 object-cover mb-2 rounded"
             />
             <h1
-              className="typing-text preview_text text-5xl font-bold text-white relative -top-[170px] -left-100 text-center 
-  after:content-[''] after:absolute after:top-0 after:left-0 after:w-2/3 after:h-full after:bg-black after:opacity-40 
+              className="typing-text preview_text text-4xl md:text-5xl font-bold text-white relative -top-[170px] md:-left-100 text-center 
+  after:content-[''] after:absolute md:after:top-0 after:left-0 md:after:w-2/3 after:w-full after:h-full after:bg-black after:opacity-40 
   overflow-hidden whitespace-nowrap border-r-2 border-white animate-typing"
             >
               {preview.name}
@@ -295,7 +295,7 @@ const Preview = () => {
           products in {categoryName}
         </span>
       </h1> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-32 py-10 bg-transparent">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-32 md:py-10 bg-transparent">
         {products.length > 0 ? (
           products.map((product, index) => (
             <div key={product.id} className="p-3 rounded-lg shadow">

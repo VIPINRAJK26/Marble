@@ -44,8 +44,11 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`md:hidden text-3xl  ${ scrolling ? "text-gray-600" : "text-white"}`}
+          className={`md:hidden text-3xl  ${
+            scrolling ? "text-gray-600" : "text-white"
+          }`}
           onClick={() => setMenuOpen(!menuOpen)}
+          ref={dropdownRef}
         >
           {menuOpen ? "✖" : "☰"}
         </button>
@@ -189,13 +192,76 @@ const Navbar = () => {
               </HashLink>
             </li>
             <li>
-              <Link
-                to="/products"
-                className="text-gray-800 text-lg"
-                onClick={() => setMenuOpen(false)}
-              >
-                Products
-              </Link>
+              <li className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  className="text-gray-800 text-lg"
+                >
+                  Products ▼
+                </button>
+                <ul
+                  className={`absolute left-0 mt-2 w-48 bg-white shadow-md rounded-xl transition-all duration-300 ${
+                    dropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                  }`}
+                >
+                  <li>
+                    <Link
+                      to="/category/indian-marbles"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Indian Marbles
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/category/indian-granites"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Indian Granites
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/category/italian-marbles"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Italian Marbles
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/category/kotta-stone"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Kotta Stone
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/category/jaisalmer-stone"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Jaisalmer Stone
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/category/lime-stones"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Lime Stones
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/category/tiles"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Tiles
+                    </Link>
+                  </li>
+                </ul>
+              </li>
             </li>
             <li>
               <Link
