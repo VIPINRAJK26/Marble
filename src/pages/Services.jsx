@@ -28,7 +28,7 @@ const Services = () => {
   return (
     <div className="bg-stone-50">
       <div className="bg-gray-600 h-80">
-        <h1 className="text-center relative top-1/2 font-bold text-6xl text-stone-50">
+        <h1 className="text-center relative top-1/2 font-bold text-7xl opacity-90 text-stone-50">
           P K Stone Services
         </h1>
       </div>
