@@ -7,74 +7,74 @@ import { useState } from "react";
 import PreviewData from "../Components/Preview/PreviewData";
 
 
-const images = {
-  "Makrana Marble": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Morchana Marble": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Nizarna Marble": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Talai Udaipur": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Indian Pink Marble": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  Green: [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Pure jet Black": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Tan Brown": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Steel Grey ": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Black Galey": [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  ],
-  "Yellow" : [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
-  ],
-  "kotta Green" : [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
-  ],
-  "Gray " : [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
-  ],
-  "Brown " : [
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-    "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
-  ]
-};
+// const images = {
+//   "Makrana Marble": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Morchana Marble": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Nizarna Marble": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Talai Udaipur": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Indian Pink Marble": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   Green: [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Pure jet Black": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Tan Brown": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Steel Grey ": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Black Galey": [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//   ],
+//   "Yellow" : [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+//   ],
+//   "kotta Green" : [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+//   ],
+//   "Gray " : [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+//   ],
+//   "Brown " : [
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+//     "https://img.freepik.com/premium-photo/vintage-textured-marble-background_480962-6481.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",  
+//   ]
+// };
 
 
 const productsData = {
@@ -262,7 +262,7 @@ const Preview = () => {
 
   // Slider settings
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -319,9 +319,9 @@ const Preview = () => {
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           className="relative top-20 md:left-1/4 bg-white bg-opacity-10"
-          overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+          overlayClassName="fixed inset-0 bg-[rgba(0,0,0,0.5)] backdrop-blur "
         >
-          <div className="bg-white  max-w-2xl md:h-[500px] w-full relative">
+          <div className=" max-w-2xl md:h-[500px] rounded-md  w-full relative">
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
@@ -335,9 +335,11 @@ const Preview = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-md"
                   />
-                  {/* <h3 className="text-center font-bold mt-2">{product.name}</h3> */}
+                  <h3 className="text-center font-bold text-white mt-2">
+                    {product.name}
+                  </h3>
                 </div>
               ))}
             </Slider>
@@ -345,7 +347,9 @@ const Preview = () => {
         </Modal>
       </div>
       <div className="flex justify-center">
-          <button className="p-3 rounded-4xl shadow-md hover:scale-110 text-stone-50 duration-300 hover:from-blue-500 hover:to-blue-700 bg-gradient-to-r from-blue-600 to-blue-500 mb-10">Contact For More Queries</button>
+        <button className="p-3 rounded-4xl shadow-md hover:scale-110 text-stone-50 duration-300 hover:from-blue-500 hover:to-blue-700 bg-gradient-to-r from-blue-600 to-blue-500 mb-10">
+          Contact For More Queries
+        </button>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Gallery = () => {
           Product Gallery
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 py-10 max-w-7xl mx-auto gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 py-10 max-w-7xl mx-auto gap-5 px-5 md:px-0">
         <div className="rounded-lg shadow-md hover:scale-110 duration-300">
           <img
             src="https://img.freepik.com/free-photo/marble-tile-texture_1339-977.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"

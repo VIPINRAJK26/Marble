@@ -16,10 +16,10 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-no-repeat w-full  bg-cover  backdrop-blur-2xl bg-[url('https://img.freepik.com/free-photo/young-asia-girl-wear-medical-face-mask-use-mobile-phone-with-dressed-casual-cloth-self-isolation-social-distancing-quarantine-corona-virus-panoramic-banner-blue-background-with-copy-space_7861-2703.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid')] p-10 md:pt-28">
-      <div className="md:flex justify-center gap-10 max-w-7xl mx-auto">
+    <div className="bg-no-repeat w-full  bg-cover  backdrop-blur-2xl bg-[url('https://img.freepik.com/free-photo/young-asia-girl-wear-medical-face-mask-use-mobile-phone-with-dressed-casual-cloth-self-isolation-social-distancing-quarantine-corona-virus-panoramic-banner-blue-background-with-copy-space_7861-2703.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid')] p-5 md:pt-28">
+      <div className="md:flex justify-center gap-10 max-w-7xl mx-auto pt-20 md:pt-0">
         <div className="content-center">
-          <img src="/pngwing.com (1).png" alt="" className="w-56" />
+          <img src="/pngwing.com (1).png" alt="" className="w-56 m-auto " />
           <div className="pt-5 text-white">
             <h1 className="font-bold text-2xl pb-3">Address</h1>
             <div className="p-4 border rounded-lg shadow">

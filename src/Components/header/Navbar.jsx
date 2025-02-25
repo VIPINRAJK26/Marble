@@ -147,13 +147,13 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <HashLink
+            <Link
               smooth
               to="/gallery"
               className={scrolling ? "text-gray-800" : "text-white"}
             >
               Gallery
-            </HashLink>
+            </Link>
           </li>
 
           <li>
@@ -207,13 +207,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <HashLink
-                to="/#gallery"
+              <Link
+                to="/gallery"
                 className="text-gray-800 text-lg"
                 onClick={() => setMenuOpen(false)}
               >
                 Gallery
-              </HashLink>
+              </Link>
             </li>
             <li>
               <Link

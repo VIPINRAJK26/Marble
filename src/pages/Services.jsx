@@ -1,4 +1,30 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
 const Services = () => {
+  const boxRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      boxRef.current,
+      { scale: 0.5, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: boxRef.current,
+          start: "top 80%", // Starts when 80% of the element is in view
+          end: "top 30%",
+          scrub: true,
+        },
+      }
+    );
+  }, []);
   return (
     <div className="bg-stone-50">
       <div className="bg-gray-600 h-80">
@@ -9,7 +35,7 @@ const Services = () => {
       <div className="md:space-y-5">
         <div className="flex justify-center py-10 ">
           <div className="md:flex rounded-md max-w-6xl gap-10">
-            <div>
+            <div ref={boxRef}>
               <img
                 src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
                 alt=""
@@ -52,7 +78,7 @@ const Services = () => {
                 customer satisfaction, making us a trusted partner for all
                 natural stone needs.
               </p>
-              <div className="flex justify-center pt-5">
+              <div className="flex justify-center pt-5 pb-10">
                 <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
                   Know More
                 </button>
@@ -112,7 +138,7 @@ const Services = () => {
                 repairs. Our team ensures long-lasting results, preserving the
                 elegance and durability of your natural stone installations.
               </p>
-              <div className="flex justify-center pt-5">
+              <div className="flex justify-center pt-5 pb-10">
                 <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
                   Know More
                 </button>

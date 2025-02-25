@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const TermsAndConditions = () => {
   return (
     <div className="container max-w-7xl mx-auto p-6 text-gray-800 pt-20">
