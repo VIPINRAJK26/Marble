@@ -1,4 +1,5 @@
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { FaXTwitter,FaPinterest, FaY } from "react-icons/fa6";
+import { FaFacebook,FaYoutube,FaInstagram,FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -13,10 +14,24 @@ const Footer = () => {
           </p>
           {/* Social Media Icons */}
           <div className="flex gap-4 mt-4">
-            <Facebook className="w-6 h-6 cursor-pointer hover:text-gray-400" />
-            <Youtube className="w-6 h-6 cursor-pointer hover:text-gray-400" />
-            <Instagram className="w-6 h-6 cursor-pointer hover:text-gray-400" />
-            <Linkedin className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+            <a href="https://www.facebook.com/pkstone.in/">
+              <FaFacebook className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+            </a>
+            <a href="https://www.youtube.com/@PKstone_pk">
+              <FaYoutube className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+            </a>
+            <a href="https://www.instagram.com/pkst.one/">
+              <FaInstagram className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+            </a>
+            <a href="https://www.linkedin.com/company/pk-stone/?viewAsMember=true">
+              <FaLinkedin className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+            </a>
+            <a href="https://x.com/pk_stone_">
+              <FaXTwitter className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+            </a>
+            <a href="https://in.pinterest.com/infopkstone/">
+              <FaPinterest className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+            </a>
           </div>
         </div>
 
@@ -86,8 +101,8 @@ const Footer = () => {
       <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
           <div className="flex gap-5">
-            <Link to={'/terms'}>Privacy Policy</Link>
-            <Link to={'/privacy'}>Terms & Conditions</Link>
+            <Link to={"/terms"}>Privacy Policy</Link>
+            <Link to={"/privacy"}>Terms & Conditions</Link>
           </div>
           <div>
             <p>All rights reserved © P K Stone. Powered by Exmedia</p>

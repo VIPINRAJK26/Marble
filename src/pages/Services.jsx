@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 gsap.registerPlugin(ScrollTrigger);
 const Services = () => {
   const boxRef = useRef(null);
@@ -56,9 +55,15 @@ const Services = () => {
                 assessment.
               </p>
               <div className="flex justify-center pt-5">
-                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
-                  Know More
-                </button>
+                <a
+                  href="https://wa.me/919447426004?text=hello" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                    Know More
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -79,9 +84,15 @@ const Services = () => {
                 natural stone needs.
               </p>
               <div className="flex justify-center pt-5 pb-10">
-                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
-                  Know More
-                </button>
+                <a
+                  href="https://wa.me/919447426004?text=hello" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                    Know More
+                  </button>
+                </a>
               </div>
             </div>
             <div>
@@ -116,9 +127,15 @@ const Services = () => {
                 high-quality stone solutions tailored to your vision.
               </p>
               <div className="flex justify-center pt-5">
-                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
-                  Know More
-                </button>
+                <a
+                  href="https://wa.me/919447426004?text=hello" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                    Know More
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -139,9 +156,15 @@ const Services = () => {
                 elegance and durability of your natural stone installations.
               </p>
               <div className="flex justify-center pt-5 pb-10">
-                <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
-                  Know More
-                </button>
+                <a
+                  href="https://wa.me/919447426004?text=hello" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center p-3 shadow-md rounded-4xl bg-gradient-to-r from-gray-300 text-zinc-50 to-stone-400 hover:scale-110 hover:from-stone-400 hover:to-gray-400 duration-500 font-semibold">
+                    Know More
+                  </button>
+                </a>
               </div>
             </div>
             <div>
