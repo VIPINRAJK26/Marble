@@ -40,19 +40,62 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold">PRODUCTS</h3>
             <ul className="mt-4 space-y-2">
-              {[
-                "Indian Marbles",
-                "Indian Granites",
-                "Italian Marbles",
-                "Kotta Stone",
-                "Jaisalmer Stone",
-                "Line Stones",
-                "Tiles",
-              ].map((item, index) => (
-                <li key={index} className="hover:text-gray-400 cursor-pointer">
-                  {item}
-                </li>
-              ))}
+              <li>
+                <Link
+                  to="/category/indian-marbles"
+                  className="block  text-white hover:gray-200"
+                >
+                  Indian Marbles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/indian-granites"
+                  className="block  text-white hover:gray-200"
+                >
+                  Indian Granites
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/italian-marbles"
+                  className="block  text-white hover:gray-200"
+                >
+                  Italian Marbles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/kotta-stone"
+                  className="block  text-white hover:gray-200"
+                >
+                  Kotta Stone
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/jaisalmer-stone"
+                  className="block  text-white hover:gray-200"
+                >
+                  Jaisalmer Stone
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/lime-stones"
+                  className="block  text-white hover:gray-200"
+                >
+                  Lime Stones
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/tiles"
+                  className="block  text-white hover:gray-200"
+                >
+                  Tiles
+                </Link>
+              </li>
             </ul>
           </div>
           <div>

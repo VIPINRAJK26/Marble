@@ -53,7 +53,7 @@ const ContactUs = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="md:w-[40%] shadow-md hover:shadow-lg hover:scale-105 duration-300 p-3 md:p-7 rounded-xl bg-white/20"
+          className="md:w-[40%] shadow-md hover:shadow-lg hover:scale-105 duration-300 p-3 md:p-7 rounded-xl bg-transparent backdrop-blur-2xl"
         >
           <div className="pb-10 pt-10 md:pt-0">
             <h1 className="text-4xl pb-5 font-semibold text-white">
@@ -82,7 +82,7 @@ const ContactUs = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border rounded text-black"
+              className="w-full p-2 border rounded text-white"
               placeholder="Enter your email"
               required
             />
@@ -95,7 +95,7 @@ const ContactUs = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 border rounded text-black"
+              className="w-full p-2 border rounded text-white"
               placeholder="Enter your name"
               required
             />
@@ -108,7 +108,7 @@ const ContactUs = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full p-2 border rounded text-black"
+              className="w-full p-2 border rounded text-white"
               placeholder="Enter your phone number"
               required
             />
@@ -120,7 +120,7 @@ const ContactUs = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 border rounded text-black"
+              className="w-full p-2 border rounded text-white"
               placeholder="Enter your message"
               required
             />
@@ -128,7 +128,7 @@ const ContactUs = () => {
 
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all duration-300"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800 transition-all duration-300"
           >
             Submit
           </button>

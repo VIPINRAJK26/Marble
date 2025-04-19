@@ -123,7 +123,7 @@ overflow-hidden whitespace-nowrap border-r-2 border-white animate-typing"
           </div>
         </Modal>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-5">
         <button className="p-3 rounded-4xl shadow-md hover:scale-110 text-stone-50 duration-300 hover:from-blue-500 hover:to-blue-700 bg-gradient-to-r from-blue-600 to-blue-500 mb-10">
           Contact For More Queries
         </button>
