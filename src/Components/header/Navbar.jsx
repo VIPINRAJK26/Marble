@@ -39,7 +39,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between md:px-32 px-6 py-4">
         <Link to="/">
-          <img src="/LOGO FOR WEB-02 PNG.png" alt="" className="w-40" />
+          <img src="/LOGO FOR WEB-02 PNG.png" alt="" className="w-60" />
         </Link>
 
         {/* Mobile Menu Button */}

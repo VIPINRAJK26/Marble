@@ -6,7 +6,7 @@ import useHero from "../../hooks/useHero";
 
 const Hero = () => {
   const [offsetY, setOffsetY] = useState(0);
-  const { hero, loading , error} = useHero(); // ✅ Corrected destructuring
+  const { hero, loading , error} = useHero(); 
 
   useEffect(() => {
     const handleScroll = () => {

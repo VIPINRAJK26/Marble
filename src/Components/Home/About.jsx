@@ -43,7 +43,7 @@ const About = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="https://img.freepik.com/free-vector/premium-quality-product-golden-label-design_1017-12393.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
+              src="/quality 411 411px-01.jpg"
               alt=""
               className="md:w-[70%] md:rounded-4xl rounded-lg mt-5 md:pt-0"
             />

@@ -101,7 +101,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold">SHOWROOMS</h3>
             <ul className="mt-4 space-y-2">
-              {["Chumgam , calicut"].map((item, index) => (
+              {["Chungam , calicut"].map((item, index) => (
                 <li key={index} className="hover:text-gray-400 cursor-pointer">
                   {item}
                 </li>
@@ -119,8 +119,8 @@ const Footer = () => {
             <li>✉ infopkstone@gmail.com</li>
             <li>
               📍 P K Stone
-              <br /> 10/416, NH Road – Chumgam
-              <br /> Feroke – Kozhikkode
+              <br /> 10/416, NH Road – Chungam
+              <br /> Feroke – Kozhikode
               <br /> Kerala – India PIN: 673631
             </li>
           </ul>

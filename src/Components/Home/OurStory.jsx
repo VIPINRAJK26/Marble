@@ -55,13 +55,13 @@ const Ourstory = () => {
         {/* Right Images */}
         <div className="md:relative md:flex justify-center pt-10 md:pt-0 items-center md:gap-6 gap-3 md:h-auto top-10">
           <motion.img
-            src="https://img.freepik.com/free-photo/door-opening-revealing-beautiful-city_23-2149768547.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_authors_boost"
+            src="/30 year exp first image 342 342-01.jpg"
             alt=""
             className=" md:w-[350px] mx-auto border-4 border-white shadow-lg md:relative md:translate-x-16"
             style={{ y }}
           />
           <motion.img
-            src="https://img.freepik.com/free-photo/low-angle-tall-buildings-with-grey-clouds_23-2148230381.jpg?ga=GA1.1.1208105082.1712396076"
+            src="/30 yr exp second image 342x 274-01.jpg"
             alt=""
             className=" md:w-[350px] mx-auto border-4 border-white shadow-lg md:-translate-x-16 md:translate-y-50 z-10"
             style={{ y }}

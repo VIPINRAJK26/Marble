@@ -41,8 +41,8 @@ const ContactUs = () => {
             <div className="p-4 border rounded-lg shadow">
               <h2 className="font-bold text-xl">P K Stone</h2>
               <ul className="text-lg">
-                <li>10/416, NH Road – Chumgam</li>
-                <li>Feroke – Kozhikkode</li>
+                <li>10/416, NH Road – Chungam</li>
+                <li>Feroke – Kozhikode</li>
                 <li>Kerala – India PIN: 673631</li>
                 <li>Call & WhatsApp: +91 9447426004</li>
                 <li>7x24 Hrs WhatsApp Chat: +91 9447426004</li>

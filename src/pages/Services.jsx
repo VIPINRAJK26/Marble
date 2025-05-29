@@ -36,7 +36,7 @@ const Services = () => {
           <div className="md:flex rounded-md max-w-6xl gap-10">
             <div ref={boxRef}>
               <img
-                src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
+                src="/project survey 450 360x-01.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
@@ -97,7 +97,7 @@ const Services = () => {
             </div>
             <div>
               <img
-                src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
+                src="/project survey 450 360x-01.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
@@ -109,7 +109,7 @@ const Services = () => {
           <div className="md:flex rounded-md max-w-6xl gap-10">
             <div>
               <img
-                src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
+                src="/project survey 450 360x-01.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
@@ -169,7 +169,7 @@ const Services = () => {
             </div>
             <div>
               <img
-                src="https://img.freepik.com/free-photo/flat-lay-stone-collection_23-2148874509.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
+                src="/project survey 450 360x-01.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
               />
