@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://server.pkstones.com/api/",
+  baseURL: "http://localhost:8000/api/",
   headers: {
     "Content-Type": "application/json",
   },

@@ -15,6 +15,7 @@ import AboutUs from "./pages/AboutUs";
 import Gallery from "./pages/Gallery";
 import TermsAndConditions from "./pages/Terms";
 import PrivacyPolicy from "./pages/Privacy";
+import ScrollToTop from "./Components/Scrolltotop/ScrolltoTop";
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
+      <ScrollToTop />
       <WhatsAppIcon />
     </BrowserRouter>
   );

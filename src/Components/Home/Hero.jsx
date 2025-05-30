@@ -6,7 +6,7 @@ import useHero from "../../hooks/useHero";
 
 const Hero = () => {
   const [offsetY, setOffsetY] = useState(0);
-  const { hero, loading , error} = useHero(); 
+  const { hero, loading, error } = useHero();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +21,6 @@ const Hero = () => {
 
   if (error) return <p>Error loading hero data</p>;
 
-  
   const settings = {
     dots: false,
     infinite: true,
@@ -33,7 +32,6 @@ const Hero = () => {
     fade: true,
   };
 
-  
   if (!Array.isArray(hero)) return <p>Error loading hero data</p>;
 
   return (
@@ -59,13 +57,13 @@ const Hero = () => {
 
             {/* Text Overlay */}
             <div
-              className="absolute top-1/2 left-[10%] text-white"
+              className="absolute top-1/3 left-[10%] text-white"
               style={{
-                transform: `translateY(${offsetY * 0.1}px) translateY(-50%)`,
+                transform: `translateY(${offsetY * 0.1}px) translateY(-70%)`,
               }}
             >
-              <h2 className="text-3xl font-bold">{slide.title_1} </h2>
-              <h1 className="text-5xl font-bold">{slide.title_2}</h1>
+              <h2 className="md:text-5xl text-3xl font-bold">{slide.title_1} </h2>
+              <h1 className="md:text-3xl text-xl font-bold">{slide.title_2}</h1>
             </div>
           </div>
         ))}
@@ -73,9 +71,23 @@ const Hero = () => {
 
       {/* Social Links */}
       <div className="absolute hidden md:flex -right-14 bottom-[40%] rotate-90 gap-10 text-white">
-        {["Facebook", "Instagram", "YouTube", "LinkedIn"].map((social) => (
-          <a href="#" key={social} className="hover:opacity-75">
-            {social}
+        {[
+          { name: "Facebook", url: "https://www.facebook.com/pkstone.in/" },
+          { name: "Instagram", url: "https://www.instagram.com/pkst.one/" },
+          { name: "YouTube", url: "https://www.youtube.com/@PKstone_pk" },
+          {
+            name: "LinkedIn",
+            url: "https://www.linkedin.com/company/pk-stone/?viewAsMember=true",
+          },
+        ].map((social) => (
+          <a
+            key={social.name}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-75"
+          >
+            {social.name}
           </a>
         ))}
       </div>

@@ -9,8 +9,7 @@ const Ourstory = () => {
       className="md:relative min-h-screen bg-fixed bg-center bg-cover flex items-center justify-center px-4 pt-7 md:pt-0 md:px-0"
       id="about"
       style={{
-        backgroundImage:
-          "url('https://img.freepik.com/free-vector/realistic-white-golden-geometric-background_79603-2032.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_authors_boost')",
+        backgroundImage: "url('/Our story BG 516x344px-02-02.jpg')",
       }}
     >
       <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-20 w-full max-w-7xl mx-auto">
@@ -59,12 +58,16 @@ const Ourstory = () => {
             alt=""
             className=" md:w-[350px] mx-auto border-4 border-white shadow-lg md:relative md:translate-x-16"
             style={{ y }}
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           />
           <motion.img
             src="/30 yr exp second image 342x 274-01.jpg"
             alt=""
             className=" md:w-[350px] mx-auto border-4 border-white shadow-lg md:-translate-x-16 md:translate-y-50 z-10"
             style={{ y }}
+            data-aos="zoom-in"
+            data-aos-duration="1100"
           />
         </div>
       </div>

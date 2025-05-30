@@ -39,13 +39,23 @@ const Services = () => {
                 src="/project survey 450 360x-01.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
               />
             </div>
             <div className="pl-4 content-center">
-              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5 pt-5">
+              <h1
+                className="text-3xl text-gray-600 text-center font-bold pb-5 pt-5"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 Project Survey and Demand assent
               </h1>
-              <p className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0">
+              <p
+                className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+              >
                 We offer expert Natural Stone Project Survey and Product
                 Assessment services. Our team evaluates site requirements,
                 recommends the best materials, and ensures quality compliance.
@@ -72,10 +82,18 @@ const Services = () => {
         <div className="flex justify-center py-10 ">
           <div className="md:flex rounded-md max-w-6xl gap-10">
             <div className="pl-4 content-center">
-              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5">
+              <h1
+                className="text-3xl text-gray-600 text-center font-bold pb-5"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 Product Purchasing and delivery
               </h1>
-              <p className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0">
+              <p
+                className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+              >
                 Also, we specialize in Natural Stone Product Purchasing and
                 Delivery, sourcing premium marbles and granites directly from
                 quarries. We ensure high-quality materials, competitive pricing,
@@ -97,9 +115,11 @@ const Services = () => {
             </div>
             <div>
               <img
-                src="/project survey 450 360x-01.jpg"
+                src="/product purchasing 450x360px-02.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
               />
             </div>
           </div>
@@ -109,16 +129,26 @@ const Services = () => {
           <div className="md:flex rounded-md max-w-6xl gap-10">
             <div>
               <img
-                src="/project survey 450 360x-01.jpg"
+                src="/natural stone crafting 450x360px-03.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
               />
             </div>
             <div className="pl-4 content-center">
-              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5 pt-5">
+              <h1
+                className="text-3xl text-gray-600 text-center font-bold pb-5 pt-5"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 Natural stone crafting
               </h1>
-              <p className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0">
+              <p
+                className="max-w-4xl text-center text-gray-500 pb-5 md:pb-0"
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+              >
                 PK Stone excels in Natural Stone Crafting and Interior Design,
                 creating stunning spaces with premium marbles and granites. Our
                 skilled artisans craft bespoke designs, from elegant flooring to
@@ -144,10 +174,18 @@ const Services = () => {
         <div className="flex justify-center py-10 ">
           <div className="md:flex rounded-md max-w-6xl gap-10">
             <div className="pl-4 content-center">
-              <h1 className="text-3xl text-gray-600 text-center font-bold pb-5">
+              <h1
+                className="text-3xl text-gray-600 text-center font-bold pb-5"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 Maintenance & Refurnishing
               </h1>
-              <p className="max-w-4xl text-center m-auto text-gray-500 pb-5 md:pb-0">
+              <p
+                className="max-w-4xl text-center m-auto text-gray-500 pb-5 md:pb-0"
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+              >
                 We also providing service of expert Natural Stone Project
                 Maintenance and Refurnishing services for both domestic and
                 commercial projects. We restore the beauty and functionality of
@@ -169,9 +207,11 @@ const Services = () => {
             </div>
             <div>
               <img
-                src="/project survey 450 360x-01.jpg"
+                src="/maintainance and refurnishing 450x360px-04.jpg"
                 alt=""
                 className="w-[90%] mx-auto md:w-full rounded-3xl"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
               />
             </div>
           </div>

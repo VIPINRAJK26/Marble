@@ -14,22 +14,25 @@ const Footer = () => {
           </p>
           {/* Social Media Icons */}
           <div className="flex gap-4 mt-4">
-            <a href="https://www.facebook.com/pkstone.in/">
+            <a href="https://www.facebook.com/pkstone.in/" target="_blank">
               <FaFacebook className="w-6 h-6 cursor-pointer hover:text-gray-400" />
             </a>
-            <a href="https://www.youtube.com/@PKstone_pk">
+            <a href="https://www.youtube.com/@PKstone_pk" target="_blank">
               <FaYoutube className="w-6 h-6 cursor-pointer hover:text-gray-400" />
             </a>
-            <a href="https://www.instagram.com/pkst.one/">
+            <a href="https://www.instagram.com/pkst.one/" target="_blank">
               <FaInstagram className="w-6 h-6 cursor-pointer hover:text-gray-400" />
             </a>
-            <a href="https://www.linkedin.com/company/pk-stone/?viewAsMember=true">
+            <a
+              href="https://www.linkedin.com/company/pk-stone/?viewAsMember=true"
+              target="_blank"
+            >
               <FaLinkedin className="w-6 h-6 cursor-pointer hover:text-gray-400" />
             </a>
-            <a href="https://x.com/pk_stone_">
+            <a href="https://x.com/pk_stone_" target="_blank">
               <FaXTwitter className="w-6 h-6 cursor-pointer hover:text-gray-400" />
             </a>
-            <a href="https://in.pinterest.com/infopkstone/">
+            <a href="https://in.pinterest.com/infopkstone/" target="_blank">
               <FaPinterest className="w-6 h-6 cursor-pointer hover:text-gray-400" />
             </a>
           </div>
@@ -148,7 +151,12 @@ const Footer = () => {
             <Link to={"/privacy"}>Terms & Conditions</Link>
           </div>
           <div>
-            <p>All rights reserved © P K Stone. Powered by Exmedia</p>
+            <p>
+              All rights reserved © P K Stone. Powered by{" "}
+              <a href="https://extechnology.in/" target="_blank" className="text-blue-500">
+                extechnology
+              </a>
+            </p>
           </div>
         </div>
       </div>

@@ -117,7 +117,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/category/jaisalmer-stone"
+                  to="/category/jaisalmer-stones"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
                   Jaisalmer Stone
@@ -125,7 +125,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/category/lime-stones"
+                  to="/category/lime-stone"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
                   Lime Stones

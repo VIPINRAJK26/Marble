@@ -25,10 +25,10 @@ const Gallery = () => {
   };
 
   const sliderSettings = {
-    dots: true,
-    infinite: true,
+    dots: filteredImages.length > 1,
+    infinite: filteredImages.length > 1,
     speed: 500,
-    slidesToShow: filteredImages.length < 3 ? filteredImages.length : 3,
+    slidesToShow: Math.min(filteredImages.length, 3),
     slidesToScroll: 1,
     initialSlide: selectedImageIndex,
     responsive: [
@@ -40,6 +40,7 @@ const Gallery = () => {
       },
     ],
   };
+  
 
   return (
     <div>
