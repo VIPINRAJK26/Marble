@@ -26,7 +26,7 @@ const Gallery = () => {
 
   const sliderSettings = {
     dots: filteredImages.length > 1,
-    infinite: filteredImages.length > 1,
+    infinite: false,
     speed: 500,
     slidesToShow: Math.min(filteredImages.length, 3),
     slidesToScroll: 1,

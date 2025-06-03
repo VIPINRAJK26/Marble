@@ -61,7 +61,7 @@ const FeaturedProducts = () => {
                     alt={category.title}
                     className="w-full h-[550px]"
                   />
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 shadow-lg p-3 rounded-2xl backdrop-blur-lg -translate-y-1/2 text-white text-center bg-opacity-50 px-3 py-1">
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 shadow-lg p-3 bg-black/10 rounded-2xl backdrop-blur-md -translate-y-1/2 text-white text-center bg-opacity-50 px-3 py-1">
                     <h1 className="font-bold pb-2 text-xl">{category.title}</h1>
                     <Link to={`/category/${categorySlug}`}>
                       <button className="bg-transparent my-2 border-white border-2 text-white hover:bg-amber-500 px-3 py-1 rounded-4xl">
